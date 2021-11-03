@@ -1,0 +1,15 @@
+{
+  "name": "corsfix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "startserver": "node ./server/server.js"
+  },
+  "author": "Thomas Godwin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^3.0.0"
+  }
+}
