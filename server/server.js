@@ -10,7 +10,7 @@ console.log('In order for this to work, your starting page must be named index.h
 
 app.use(express.static(publicDirectoryPath))
 
-app.get('/returnsomeJSON', (req, res) => {
+app.get('/returnSomeJSON', (req, res) => {
     res.json([
         { productNumber: 16, description: 'paper towels', price: 4.50 },
         { productNumber: 35, description: 'milk', price: 3.99 },
@@ -18,7 +18,8 @@ app.get('/returnsomeJSON', (req, res) => {
 })
 
 app.get('/nodehttp', (req, res) => {
-    console.log('req.query: ', req.query);
+    // console.log('req.query: ', req.query);
+
 
     const options = {
         json: true,
@@ -31,7 +32,7 @@ app.get('/nodehttp', (req, res) => {
         incomingData = d.toString()
         parsedData = JSON.parse(incomingData)
         res.send(parsedData)
-    }
+    }    
 
     const fetchData = () => {
         https.get('https://apis.vinmonopolet.no/stores/v0/details?storeNameContains=holmen', options, (res) => {
