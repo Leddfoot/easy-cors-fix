@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "startserver": "node ./server/server.js"
+    "startserver": "node ./server/server.js",
+    "netlify-start": "node ./server/server.js"
   },
   "author": "Thomas Godwin",
   "license": "ISC",
