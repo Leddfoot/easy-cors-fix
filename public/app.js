@@ -4,7 +4,7 @@ console.log('This is where your app is running from:', location.href)
 const testFunction =(e)=>{
   e.preventDefault()
   console.log('submitted')
-  fetch('http://localhost:3000/returnSomeJSON').then((response)=> {
+  fetch('http://localhost:8888/returnSomeJSON').then((response)=> {
     response.json().then((data)=> {
       console.log(data)
     })
